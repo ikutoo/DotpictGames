@@ -5,6 +5,11 @@
     "AssetReferences": [],
     "Entities": [{
         "Components": [{
+            "$type": "DragAndDrop.PuzzleConfiguration, DragAndDrop",
+            "PieceDragSnapDistance": 50,
+            "WidthPieceCount": 3,
+            "HeightPieceCount": 3
+        }, {
             "$type": "Unity.Entities.EntityGuid, Unity.Entities",
             "a": 17126295049019411949,
             "b": 12986488642060905213
@@ -15,11 +20,6 @@
             "autoSizeToFrame": true,
             "orientation": 0,
             "renderMode": 0
-        }, {
-            "$type": "DragAndDrop.PuzzleConfiguration, DragAndDrop",
-            "PieceDragSnapDistance": 50,
-            "WidthPieceCount": 3,
-            "HeightPieceCount": 3
         }, {
             "$type": "Unity.Tiny.Scenes.Scenes, Unity.Tiny.Scenes",
             "Elements": [{

@@ -61,9 +61,9 @@ namespace DragAndDrop
                 EntityManager.RemoveComponent<Disabled>(buttonReplayEntity);
 
                 // TODO: re-integrate this when audio system works
-                //var successSoundEntity = Entity.Null;
-                //Entities.WithAll<SuccessAudioTag>().ForEach((Entity entity) => { successSoundEntity = entity; });
-                //EntityManager.AddComponentData(successSoundEntity, new AudioSourceStart());
+                var successSoundEntity = Entity.Null;
+                Entities.WithAll<SuccessAudioTag>().ForEach((Entity entity) => { successSoundEntity = entity; });
+                EntityManager.AddComponentData(successSoundEntity, new AudioSourceStart());
 
                 var selectionCursorEntity = Entity.Null;
                 Entities.WithAll<SelectionCursor>().ForEach((Entity entity) => { selectionCursorEntity = entity; });
